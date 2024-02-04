@@ -1,0 +1,72 @@
+!-- Luis Perez -->!
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cheesecake Order</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Script to detect the word vegan in the note section, if it detects alert a warning, else alert order info -->
+ <script src="javascripts/scripty.js"></script>  
+
+</head>
+
+<body>
+
+    <h1>Cheesecake Order Form</h1>
+   
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Wiki.com" alt="Cheesecake" width="128"    height="150">
+
+    <p>Quantity Topping</p>
+    <form action="/action_page.php"> <!-- Create drop down -->
+        <div style="display: inline-block;">
+            <select name="quantity" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <!-- Creating radio buttons -->
+        <div style="display: inline-block; vertical-align: top;"> <!-- aligning buttons next to drop down -->
+            <input type="radio" id="plain" name="topping" value="Plain">
+            <label for="plain">Plain</label><br>
+            <input type="radio" id="cherry" name="topping" value="Cherry">
+            <label for="cherry">Cherry</label><br>
+            <input type="radio" id="chocolate" name="topping" value="Chocolate">
+            <label for="chocolate">Chocolate</label><br>
+        </div>
+
+        <br> <!-- Add a line break for spacing -->
+
+        <label for="notes">Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Order">
+    </form>
+	<!-- Create id for months to select -->
+    <div id="monthSelector">
+        <span>Orders for <span id="selectedMonth" style="font-weight: bold;">Jan</span></span>
+        <div id="monthOptions">
+            <div class="month-option">Jan</div>
+            <div class="month-option">Feb</div>
+            <div class="month-option">Mar</div>
+            <div class="month-option">Apr</div>
+            <div class="month-option">May</div>
+            <div class="month-option">Jun</div>
+            <div class="month-option">Jul</div>
+            <div class="month-option">Aug</div>
+            <div class="month-option">Sep</div>
+            <div class="month-option">Oct</div>
+            <div class="month-option">Nov</div>
+            <div class="month-option">Dec</div>
+        </div>
+    </div>
+
+    <!-- Orders last month -->
+    <h3>Total Orders Last Month</h3>
+    <ul>
+        <li>11 Cherry</li>
+        <li>17 Chocolate</li>
+        <li>31 Plain</li>
+    </
+

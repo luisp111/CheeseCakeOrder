@@ -1,0 +1,76 @@
+/*
+*Luis Perez
+*/
+
+/*
+  Align body to the center*/
+body {
+  background-color: crimson;
+  border: 10px solid burlywood; adjust width and color
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  height: 100vh;
+  text-align: center; //center text within body
+}
+
+h1 {
+  color: burlywood;
+  margin-left: 20px; //change font and color
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: burlywood;
+}
+
+h3{
+  color: burlywood;
+}
+
+select{
+  color: burlywood;
+}
+input[type="radio"] + label { 
+  color: burlywood;
+}
+
+
+li {
+  color: burlywood;
+}
+/*
+   Make image rounded */	
+img {
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+ #monthSelector {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: burlywood;
+}
+/* 
+   Display month options */
+#monthOptions {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  z-index: 1;
+  overflow-y: auto;
+  max-height: 150px;
+}
+/*
+  Make month selector to hover*/
+#monthSelector:hover #monthOptions {
+  display: block;
+}
